@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Solenya's Hub — Torn City Tools</title><meta name="description" content="A directory of Torn City tools, userscripts, bots and utilities.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"><link rel="icon" href="assets/logo.svg"><link rel="stylesheet" href="styles.css"></head><body>
+<div class="grid-bg"></div>
+<header id="nav"><a class="brand" href="#home"><img src="assets/logo.svg" alt="" width="30" height="22">SOLENYA'S HUB</a>
+<button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<nav id="menu"><a href="#home" class="on">Home</a><a href="#tools">Tools</a><a href="#about">About</a><a href="#about" id="dl">Discord</a><button id="ns" aria-label="Search tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button></nav></header>
+<main>
+<section id="home" class="hero"><div class="glow"></div><div class="wrap">
+<p class="eyebrow rv0" style="--i:0">TORN CITY TOOLS &amp; UTILITIES</p>
+<h1 class="rv0" style="--i:1">SOLENYA'S<br><span>HUB</span></h1><div class="sweep rv0" style="--i:2"></div>
+<h2 class="rv0" style="--i:2">Tools to give you an edge in Torn City.</h2>
+<p class="lead rv0" style="--i:3">A collection of tools, automation, analytics and utilities built to make life in Torn easier.</p>
+<div class="cta rv0" style="--i:4"><a class="btn pri" href="#tools">Browse Tools →</a><a class="btn" href="#about">About the Project</a></div>
+<div class="stats rv0" id="stats" style="--i:5"></div></div></section>
+<section id="featured" class="wrap rv" hidden><div class="sh"><h2>Featured Tools</h2><a href="#tools">View all →</a></div><div class="feat" id="feat"></div></section>
+<section id="tools" class="wrap rv"><div class="sh"><h2>Tool Directory</h2><span id="count" class="mono"></span></div>
+<div class="ctl"><div class="seg" id="acc"><button data-a="all" class="on">All</button><button data-a="free">Free</button><button data-a="premium">Premium</button></div>
+<input id="q" type="search" placeholder="Search tools…" aria-label="Search tools"><select id="sort" aria-label="Sort"><option value="manual">Default order</option><option value="name">Name A–Z</option><option value="new">Recently updated</option></select></div>
+<div class="chips" id="chips"></div><div class="tools" id="grid"></div></section>
+<section id="about" class="wrap rv"><div class="sh"><h2>About</h2></div><div class="about"><p>Solenya's Hub collects my Torn City tools in one place. Each card opens the official Torn forum post for that tool, where you'll find details, updates and support.</p><ul id="links"></ul></div></section>
+</main>
+<footer class="foot wrap">© <span id="yr"></span> Solenya's Hub. Fan-made and not affiliated with or endorsed by Torn City. Use tools at your own risk and follow Torn's rules.</footer>
+<script src="common.js"></script><script src="script.js"></script></body></html>

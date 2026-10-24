@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Solenya's Hub</title><meta name="robots" content="noindex"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="admin.css"></head><body><div class="grid-bg"></div>
+<div class="warn"><b>Local draft editor — no authentication, not secure.</b> Edits are saved only in this browser and do NOT change the public site until you export the JSON and commit it as <code>data/tools.json</code>.<span id="st"></span></div>
+<div class="ad"><aside class="panel"><div class="row"><button id="new">+ New</button><button id="ex">Export JSON</button><label>Import<input id="im" type="file" accept=".json" hidden></label><button id="rs">Reset to published</button></div>
+<div class="row"><button id="ac">+ Category</button><button id="rc">− Category</button></div>
+<div class="row"><input id="sq" placeholder="Search…" style="flex:1"><select id="sa"><option value="">All</option><option value="free">Free</option><option value="premium">Premium</option><option value="tbc">Access TBC</option></select></div><ul id="list"></ul></aside>
+<section><div class="panel"><form id="f"><label>Name<input name="nm" required></label><label>ID (slug)<input name="tid" required></label>
+<label class="w">Description<textarea name="desc" rows="3" required></textarea></label>
+<label>Category<select name="cat"></select></label><label>Access<select name="acc"><option value="">Unknown (TBC)</option><option value="free">Free</option><option value="premium">Premium</option></select></label>
+<label class="w">Official forum post URL<input name="url" placeholder="https://www.torn.com/forums.php#/..."></label>
+<label>Thumbnail URL (optional)<input name="thumb"></label><label>Icon override (optional)<select name="ico"></select></label>
+<label>Version<input name="ver"></label><label>Updated<input name="upd" type="date"></label>
+<label><span><input name="feat" type="checkbox"> Featured (order = list order; use ↑↓)</span></label>
+<ul class="w" id="err"></ul><div class="acts w"><button class="pri2">Save tool</button><button type="button" id="dup">Duplicate</button><button type="button" class="dng" id="del">Delete</button></div></form></div>
+<h3 style="margin:18px 0 8px;font-family:var(--d)">Card preview</h3><div style="max-width:380px" id="pv"></div></section></div>
+<script src="../common.js"></script><script src="admin.js"></script></body></html>

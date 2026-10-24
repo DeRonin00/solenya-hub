@@ -1,0 +1,105 @@
+{
+  "links": {
+    "torn": "",
+    "discord": "",
+    "github": ""
+  },
+  "categories": [
+    {
+      "id": "company",
+      "name": "Company Management",
+      "icon": "building"
+    },
+    {
+      "id": "trading",
+      "name": "Trading & Analytics",
+      "icon": "chart"
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Logistics",
+      "icon": "plane"
+    },
+    {
+      "id": "userscripts",
+      "name": "Userscripts",
+      "icon": "code"
+    },
+    {
+      "id": "bots",
+      "name": "Discord Bots",
+      "icon": "bot"
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "icon": "wrench"
+    },
+    {
+      "id": "other",
+      "name": "Other Tools",
+      "icon": "box"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tcm",
+      "name": "Torn Company Manager (TCM)",
+      "description": "Company management, stock analysis, training recommendations, optimisation and other director utilities that exist nowhere else.",
+      "category": "company",
+      "access": "premium",
+      "url": "https://www.torn.com/forums.php#/p=threads&f=67&t=16550680&b=0&a=0",
+      "thumbnail": "https://i.ibb.co/ptzw4B3/image.png",
+      "featured": true
+    },
+    {
+      "id": "company-hiring",
+      "name": "Torn Company Hiring",
+      "description": "The absolute strongest company hiring tool in Torn currently [LIMITED SPOTS ONLY].",
+      "category": "company",
+      "access": "premium",
+      "url": "https://www.torn.com/forums.php#/p=threads&f=67&t=16558655&b=0&a=0",
+      "thumbnail": "https://i.ibb.co/LDvxPrYY/image.png",
+      "icon": "star",
+      "featured": true
+    },
+    {
+      "id": "faction-war-payout",
+      "name": "Torn Automated Faction War payout",
+      "description": "The strongest automated payout tool includes Xanax penalties, an automated OD tracker, and the most accurate and quickest payouts, with one-click pay for each member. \n\nBasically, do your payouts in 5 minutes.",
+      "category": "utilities",
+      "access": "premium",
+      "url": "https://www.torn.com/forums.php#/p=threads&f=67&t=16563983&b=0&a=0",
+      "thumbnail": "https://i.ibb.co/99XMwV7W/image-20261024-191908.png",
+      "icon": "users",
+      "featured": true
+    },
+    {
+      "id": "merits-tracker",
+      "name": "Solenya's Merits Tracker",
+      "description": "Track your merits and do bad stuff to them. And learn how to get each merit.",
+      "category": "userscripts",
+      "access": "free",
+      "url": "https://www.torn.com/forums.php#/p=threads&f=67&t=16566752&b=0&a=0",
+      "thumbnail": "https://i.ibb.co/TxjTrFxV/image.png"
+    },
+    {
+      "id": "faction-investment-tracker",
+      "name": "FACTION INVESTMENT TRACKER",
+      "description": "The bot automatically tracks which stock benefits were sent to you and which bank interest payments were deposited into the faction balance. This makes it easy to see exactly what every member owes, contributed, or has already paid. Easy monthly reports as well.",
+      "category": "bots",
+      "access": "premium",
+      "url": "https://www.torn.com/forums.php#/p=threads&f=67&t=16575869&b=0&a=0&start=0&to=27666198",
+      "thumbnail": "https://i.ibb.co/DDLc2Vmy/image.png"
+    },
+    {
+      "id": "trade-risk-analyzer",
+      "name": "Trade Risk Analyzer",
+      "description": "Get a heads-up on muggers! \n\nThis doesn't prevent mugs or do anything automatic. It's purely informational. Whether you trade or not is 100% your call. Always hosp yourself during a trade just to be safe, this script just gives you a heads up so you remember to do it when dealing with a risky partner. Some players might seem safe but still mug you, some players will seem risky and not mug you. Always self-hosp.",
+      "category": "other",
+      "access": "free",
+      "url": "https://www.torn.com/forums.php#/p=threads&f=67&t=16559414&b=0&a=0",
+      "thumbnail": "https://i.ibb.co/xq4HG0KN/image.png"
+    }
+  ]
+}
