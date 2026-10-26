@@ -18,9 +18,12 @@ $('#chips').onclick=e=>{const b=e.target.closest('button');if(b){S.c=b.dataset.c
 $('#q').oninput=e=>{S.q=e.target.value.trim();draw()};$('#sort').onchange=e=>{S.s=e.target.value;draw()};
 $('#grid').onclick=e=>{if(e.target.id==='clr'){Object.assign(S,{q:'',a:'all',c:'all'});draw()}};
 draw();
-const ln=[['torn','Torn profile'],['discord','Discord server'],['github','GitHub']];
-$('#links').innerHTML=ln.map(([k,n])=>safeUrl(L[k])?`<li><a href="${esc(safeUrl(L[k]))}" target="_blank" rel="noopener noreferrer">${n} →</a></li>`:`<li class="dim">${n} — not configured yet (set in <code>data/tools.json</code>)</li>`).join('');
-if(safeUrl(L.discord)){const d=$('#dl');d.href=safeUrl(L.discord);d.target='_blank';d.rel='noopener noreferrer'}
+const ln=[['torn','Torn profile'],['discord','Discord']];
+$('#links').innerHTML=ln.map(([k,n])=> {
+  if (k === 'discord' && L[k]) return `<li class="dim">${n} — .Solenya.</li>`;
+  return safeUrl(L[k])?`<li><a href="${esc(safeUrl(L[k]))}" target="_blank" rel="noopener noreferrer">${n} →</a></li>`:`<li class="dim">${n} — not configured yet (set in <code>data/tools.json</code>)</li>`;
+}).join('');
+
 $('#ns').onclick=()=>{$('#tools').scrollIntoView();setTimeout(()=>$('#q').focus({preventScroll:true}),300)};
 $('#burger').onclick=()=>{const o=$('#menu').classList.toggle('open');$('#burger').setAttribute('aria-expanded',o)};
 $('#menu').onclick=e=>{if(e.target.closest('a'))$('#menu').classList.remove('open')};
