@@ -15,16 +15,6 @@
       "icon": "chart"
     },
     {
-      "id": "travel",
-      "name": "Travel & Logistics",
-      "icon": "plane"
-    },
-    {
-      "id": "userscripts",
-      "name": "Userscripts",
-      "icon": "code"
-    },
-    {
       "id": "bots",
       "name": "Discord Bots",
       "icon": "bot"
